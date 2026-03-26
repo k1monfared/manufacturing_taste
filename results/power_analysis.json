@@ -1,0 +1,80 @@
+{
+  "salganik": {
+    "correlation_comparison": {
+      "effect_size_d": 0.3822114562493568,
+      "achieved_power": 0.9992323861148996,
+      "required_n_per_group": 108,
+      "current_n_per_group": 360,
+      "sufficient": true
+    },
+    "gini_comparison": {
+      "effect_size_d": 0.1602958581152286,
+      "achieved_power": 0.5755925033420359,
+      "required_n_per_group": 611,
+      "current_n_per_group": 360,
+      "sufficient": false
+    },
+    "recommended_n": 611
+  },
+  "counterfactual": {
+    "counterfactual_distance": 0.8822002047854379,
+    "current_n": 200,
+    "note": "CF distance of 0.882 is far from 0; 100 runs adequate for detection",
+    "sufficient": true,
+    "recommended_n": 100
+  },
+  "variance_decomposition": {
+    "social_influence_effect": {
+      "effect_size_d": 0.047271945924726486,
+      "required_n": 7025,
+      "note": "Canonical variance nearly identical across conditions; quality-canonical correlation is more sensitive metric"
+    },
+    "capital_effect": {
+      "effect_size_d": 0.11644450194789814,
+      "required_n": 1158
+    },
+    "quality_corr_difference": {
+      "full_model": 0.32344262714537064,
+      "homogeneous_capital": 0.4616802641330641,
+      "difference": 0.13823763698769348,
+      "note": "Quality-canonical correlation changes from 0.323 to 0.462 when capital is equalized, showing capital's mediating role"
+    },
+    "recommended_n": 500
+  },
+  "historical": {
+    "current_ci_half_width": 0.01657502915383056,
+    "target_ci_half_width": 0.02,
+    "current_n": 100,
+    "required_n": 69,
+    "sufficient": true,
+    "recommended_n": 69
+  },
+  "sensitivity": {
+    "per_parameter": {
+      "si_gamma": {
+        "effect_size_d": 0.17409030422715938,
+        "required_n": 518
+      },
+      "mee_lambda": {
+        "effect_size_d": 0.7718824942552015,
+        "required_n": 27
+      },
+      "mee_tau": {
+        "effect_size_d": 0.15829261897022465,
+        "required_n": 627
+      },
+      "capital_alpha": {
+        "effect_size_d": 2.5003745222120344,
+        "required_n": 3
+      }
+    },
+    "recommended_n": 200
+  },
+  "overall_recommendation": {
+    "salganik": 611,
+    "counterfactual": 100,
+    "variance_decomposition": 500,
+    "historical": 69,
+    "sensitivity": 200
+  }
+}

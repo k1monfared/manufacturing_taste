@@ -1,0 +1,30 @@
+{
+    "source": "Salganik et al. 2006",
+    "targets": {
+        "quality_success_correlation_independent": {
+            "value": 0.65,
+            "range": [0.60, 0.70],
+            "description": "Correlation between intrinsic quality and success without social influence"
+        },
+        "quality_success_correlation_social": {
+            "value": 0.40,
+            "range": [0.30, 0.50],
+            "description": "Correlation between intrinsic quality and success with social influence"
+        },
+        "gini_ratio_social_independent": {
+            "value": 1.30,
+            "range": [1.25, 1.50],
+            "description": "Ratio of Gini coefficient (social condition / independent condition)"
+        },
+        "rank_variance_middle_quality": {
+            "value": 200,
+            "range": [150, 250],
+            "description": "Variance in rank across worlds for middle-quality songs"
+        }
+    },
+    "notes": {
+        "best_rarely_did_poorly": "Top decile quality rarely ranked below median",
+        "worst_rarely_did_well": "Bottom decile quality rarely ranked above median",
+        "middle_unpredictable": "Middle 80% could achieve any rank"
+    }
+}

@@ -1,0 +1,31 @@
+Cultural Market Simulation - Project Status
+
+- Last Updated: 2026-03-25
+- Stage: MVP
+- Mode: Hybrid (Claude Code + Manual)
+- Next Milestone: Full calibration and additional simulation runs
+
+What's Complete
+- Core simulation engine (8 modules, ~2100 lines)
+- 90 unit tests passing (7 test files)
+- 5 experiments run with 100 runs each
+- Power analysis module with sample size calculations
+- 7 publication-quality figures generated
+- 3 LaTeX tables for paper
+- Academic paper compiled to PDF (all sections filled in)
+- README with key findings and reproduction instructions
+
+Key Results
+- Social influence reduces quality-success correlation (p=0.002)
+- Counterfactual distance = 0.88 (canons highly path-dependent)
+- Capital inequality accounts for 30% of quality-canon decorrelation
+- Historical scenario shows near-maximal path dependence (CF=0.97)
+
+In Progress
+- 260 additional Salganik runs per condition (background)
+- Will bring total to 360 per group (exceeds 352 needed for Gini power)
+
+Future Work
+- Full parameter calibration against Salganik targets
+- Re-run experiments with calibrated parameters
+- Execute demonstration notebooks

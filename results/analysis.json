@@ -1,0 +1,213 @@
+{
+  "timestamp": "2026-03-26T01:19:47.990131",
+  "salganik": {
+    "n_independent_runs": 360,
+    "n_social_runs": 360,
+    "independent": {
+      "quality_success_corr_mean": 0.5723817864161671,
+      "quality_success_corr_std": 0.15717244665804797,
+      "quality_success_corr_sem": 0.008283715281012523,
+      "gini_mean": 0.46287958548358826,
+      "gini_std": 0.033574194670211215
+    },
+    "social": {
+      "quality_success_corr_mean": 0.5134555767335994,
+      "quality_success_corr_std": 0.1511114819590304,
+      "quality_success_corr_sem": 0.007964274393232981,
+      "gini_mean": 0.4683418162658484,
+      "gini_std": 0.034570388393078785
+    },
+    "comparison": {
+      "gini_ratio": 1.0118005437127964,
+      "corr_difference": 0.058926209682567676,
+      "canonical_overlap": 0.026632957429624626
+    }
+  },
+  "counterfactual": {
+    "n_runs": 200,
+    "counterfactual_distance": 0.8822002047854379,
+    "canonical_probability_variance": 0.00816165,
+    "mean_canonical_prob": 0.05,
+    "max_canonical_prob": 0.55,
+    "min_canonical_prob": 0.0,
+    "canonical_by_decile": {
+      "1": 0.0,
+      "2": 5e-05,
+      "3": 0.0004,
+      "4": 0.0012000000000000001,
+      "5": 0.005600000000000001,
+      "6": 0.012599999999999998,
+      "7": 0.0263,
+      "8": 0.0597,
+      "9": 0.1164,
+      "10": 0.27775
+    }
+  },
+  "variance": {
+    "conditions": {
+      "full": {
+        "n_runs": 300,
+        "canonical_variance_mean": 0.04749399333333332,
+        "canonical_variance_std": 7.332071073184001e-05,
+        "quality_canonical_corr_mean": 0.32344262714537064
+      },
+      "no_social": {
+        "n_runs": 300,
+        "canonical_variance_mean": 0.04749699666666665,
+        "canonical_variance_std": 5.193248811892389e-05,
+        "quality_canonical_corr_mean": 0.35192157459903867
+      },
+      "homogeneous_capital": {
+        "n_runs": 300,
+        "canonical_variance_mean": 0.047481979999999986,
+        "canonical_variance_std": 0.00012613999999999922,
+        "quality_canonical_corr_mean": 0.4616802641330641
+      },
+      "both_ablations": {
+        "n_runs": 238,
+        "canonical_variance_mean": 0.047484857142857134,
+        "canonical_variance_std": 0.0001158205860944638,
+        "quality_canonical_corr_mean": 0.4623155837895213
+      }
+    },
+    "decomposition": {
+      "quality": 0.9998076348221119,
+      "capital": 0.00025294426705744924,
+      "social_influence": 0,
+      "residual": 2.6569775951612584e-06
+    }
+  },
+  "historical": {
+    "n_runs": 100,
+    "quality_success_corr_mean": 0.7076518982638413,
+    "quality_success_corr_std": 0.08456647527464571,
+    "capital_success_corr_mean": 0.5263084404650238,
+    "capital_success_corr_std": 0.12881756038019618,
+    "counterfactual_distance": 0.9738688455010294,
+    "canonical_overlap_mean": 0.025127784093301336
+  },
+  "sensitivity": {
+    "sensitivities": {
+      "si_gamma": {
+        "levels": {
+          "low": {
+            "n_runs": 100,
+            "value": 0.25,
+            "quality_success_corr": 0.5291952799472421,
+            "quality_success_corr_std": 0.15042271314093178,
+            "gini": 0.4662016498181542,
+            "gini_std": 0.03104953607555022
+          },
+          "base": {
+            "n_runs": 100,
+            "value": 0.5,
+            "quality_success_corr": 0.5112736849311106,
+            "quality_success_corr_std": 0.15730928406316008,
+            "gini": 0.4701819242472741,
+            "gini_std": 0.03110740012419847
+          },
+          "high": {
+            "n_runs": 100,
+            "value": 0.75,
+            "quality_success_corr": 0.5031364938571137,
+            "quality_success_corr_std": 0.1489445439920773,
+            "gini": 0.4680401965241803,
+            "gini_std": 0.03277496134450016
+          }
+        },
+        "corr_sensitivity": -0.05211757218025692,
+        "gini_sensitivity": 0.003677093412052135
+      },
+      "mee_lambda": {
+        "levels": {
+          "low": {
+            "n_runs": 100,
+            "value": 0.15,
+            "quality_success_corr": 0.46670502130290253,
+            "quality_success_corr_std": 0.1429402250824534,
+            "gini": 0.5206018417570406,
+            "gini_std": 0.04819668070250351
+          },
+          "base": {
+            "n_runs": 100,
+            "value": 0.3,
+            "quality_success_corr": 0.5285997542424148,
+            "quality_success_corr_std": 0.15012576234604424,
+            "gini": 0.46738211293609994,
+            "gini_std": 0.03332794727138565
+          },
+          "high": {
+            "n_runs": 100,
+            "value": 0.44999999999999996,
+            "quality_success_corr": 0.5812906613522201,
+            "quality_success_corr_std": 0.15376167853932832,
+            "gini": 0.4240675259196496,
+            "gini_std": 0.024606674867530088
+          }
+        },
+        "corr_sensitivity": 0.38195213349772517,
+        "gini_sensitivity": -0.3217810527913034
+      },
+      "mee_tau": {
+        "levels": {
+          "low": {
+            "n_runs": 100,
+            "value": 7.5,
+            "quality_success_corr": 0.5068389661332404,
+            "quality_success_corr_std": 0.16030445107139657,
+            "gini": 0.4739924059781119,
+            "gini_std": 0.03619121445350017
+          },
+          "base": {
+            "n_runs": 100,
+            "value": 15.0,
+            "quality_success_corr": 0.5109498516050008,
+            "quality_success_corr_std": 0.15100565881807856,
+            "gini": 0.4673529602376935,
+            "gini_std": 0.032528528878756735
+          },
+          "high": {
+            "n_runs": 100,
+            "value": 22.5,
+            "quality_success_corr": 0.4822858910602884,
+            "quality_success_corr_std": 0.14973947464357473,
+            "gini": 0.4726396941386718,
+            "gini_std": 0.03435481079501251
+          }
+        },
+        "corr_sensitivity": -0.0016368716715301343,
+        "gini_sensitivity": -9.01807892960053e-05
+      },
+      "capital_alpha": {
+        "levels": {
+          "low": {
+            "n_runs": 100,
+            "value": 0.25,
+            "quality_success_corr": 0.575835042923986,
+            "quality_success_corr_std": 0.17780652083043058,
+            "gini": 0.4505797133377439,
+            "gini_std": 0.039421019569467024
+          },
+          "base": {
+            "n_runs": 100,
+            "value": 0.5,
+            "quality_success_corr": 0.5247409272891606,
+            "quality_success_corr_std": 0.15196315562816967,
+            "gini": 0.46928575431832537,
+            "gini_std": 0.035988906643414115
+          },
+          "high": {
+            "n_runs": 100,
+            "value": 0.75,
+            "quality_success_corr": 0.24382146034675764,
+            "quality_success_corr_std": 0.060405634860526365,
+            "gini": 0.7401242838226055,
+            "gini_std": 0.05353785271086971
+          }
+        },
+        "corr_sensitivity": -0.6640271651544567,
+        "gini_sensitivity": 0.5790891409697233
+      }
+    }
+  }
+}
